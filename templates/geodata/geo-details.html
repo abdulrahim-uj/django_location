@@ -1,0 +1,12 @@
+{% if geo_data %}
+    <h1>Geo Data</h1>
+    <h1>Lat: {{ geo_data.lat }} Lng: {{ geo_data.lng }}</h1>
+    <h2>Country: {{ geo_data.country }} {{ geo_data.country_code }}</h2>
+    <h2>State: {{ geo_data.state }} {{ geo_data.state_code }}</h2>
+    <h3>District: {{ geo_data.district }}</h3>
+    <h3>Type: {{ geo_data.type }}</h3>
+    <h3>Pincode: {{ geo_data.pincode }}</h3>
+    <h3>Time zone: {{ geo_data.time_zone }}</h3>
+    <h4>Currency: {{ geo_data.currency }} {{ geo_data.currency_symbol }}</h4>
+
+{% endif %}
